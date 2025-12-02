@@ -45,7 +45,6 @@ Image Size: 224 × 224
 
 # Training Summary
 
-
 ✓ Model: tf_efficientnet_b0_ns
 
 ✓ Total epochs: 18
@@ -65,6 +64,7 @@ Image Size: 224 × 224
 ✓ Final model saved to: final_model.pth
 
 This high performance indicates:
+
     -> Strong feature extraction from EfficientNet-B0
     -> Good dataset curation and balancing
     -> Effective augmentation strategy
@@ -84,25 +84,6 @@ Benefits:
 
 ## Deployment Architecture
 Gradio UI  →  FastAPI Backend → ONNXRuntime → Prediction
-
-Frontend (Gradio)
-
-Clean image upload interface
-
-
-Backend (FastAPI)
-
-/predict endpoint
-
-Accepts image input
-
-Runs ONNX inference
-
-Returns class + confidence score
-
-Inference Engine
-
-ONNX Runtime (CPU/GPU execution providers)
 
 # How to Run Locally
 
