@@ -47,42 +47,57 @@ Image Size: 224 × 224
 
 
 ✓ Model: tf_efficientnet_b0_ns
+
 ✓ Total epochs: 18
+
 ✓ Best validation F1-score: 0.9902
+
 ✓ Final validation accuracy: 0.9890
+
 ✓ Number of classes: 6
+
 ✓ Training samples: 3744
+
 ✓ Validation samples: 91
 
 ✓ Best model saved to: best_model.pth
+
 ✓ Final model saved to: final_model.pth
 
 This high performance indicates:
-
-Strong feature extraction from EfficientNet-B0
-Good dataset curation and balancing
-Effective augmentation strategy
-No signs of overfitting (train/val difference small)
+    -> Strong feature extraction from EfficientNet-B0
+    -> Good dataset curation and balancing
+    -> Effective augmentation strategy
+    -> No signs of overfitting (train/val difference small)
 
 # ONNX Conversion
 
 The trained PyTorch model was exported to ONNX for lightweight, hardware-accelerated inference.
 
 Benefits:
+
  -> Faster inference
+ 
  -> Portable across platforms (Windows, Linux, Cloud)
+ 
  -> Compatible with FastAPI, mobile, and edge devices
 
 ## Deployment Architecture
 Gradio UI  →  FastAPI Backend → ONNXRuntime → Prediction
 
 Frontend (Gradio)
+
 Clean image upload interface
 
+
 Backend (FastAPI)
+
 /predict endpoint
+
 Accepts image input
+
 Runs ONNX inference
+
 Returns class + confidence score
 
 Inference Engine
