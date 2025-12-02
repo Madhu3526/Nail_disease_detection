@@ -2,11 +2,17 @@
 
 A deep-learning–based multi-class classification system that detects 6 nail disorders from images using a fine-tuned EfficientNet-B0 model.
 The project includes:
+
     -> PyTorch training pipeline
+    
     -> ONNX model export
+    
     -> FastAPI backend for inference
+    
     -> Gradio-based web UI
+    
     -> GPU-accelerated inference support
+    
 
 # Project Overview
 
