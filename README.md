@@ -135,3 +135,6 @@ Number of Classes	6
 Epochs	18
 
 The model generalizes extremely well with no significant overfitting.
+
+<img width="1919" height="966" alt="image" src="https://github.com/user-attachments/assets/79b8ee87-dc20-4bfc-adab-48cda00bd991" />
+
