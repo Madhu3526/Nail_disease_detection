@@ -88,9 +88,10 @@ Gradio UI  →  FastAPI Backend → ONNXRuntime → Prediction
 # How to Run Locally
 
 1️⃣ Create virtual environment
-python -m venv venv
-venv\Scripts\activate
-pip install -r requirements.txt
+
+    python -m venv venv
+    venv\Scripts\activate
+    pip install -r requirements.txt
 
 2️⃣ Start FastAPI backend
 uvicorn app:app --reload
