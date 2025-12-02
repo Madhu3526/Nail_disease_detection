@@ -127,18 +127,29 @@ Public URL → generated automatically by Gradio
 
 # Tech Stack
 Component	Technology
-Model	PyTorch + EfficientNet-B0
+
+Model	    PyTorch + EfficientNet-B0
+
 Deployment	FastAPI
-UI	Gradio
+
+UI	        Gradio
+
 Inference	ONNX Runtime
+
 Training	NVIDIA GPU
+
 Dataset	Custom curated nail disease dataset
 
 # Results
+
 Metric	Score
+
 Validation Accuracy	98.90%
-Best Validation F1-Score	0.9902
+
+Best Validation F1-Score 0.9902
+
 Number of Classes	6
+
 Epochs	18
 
 The model generalizes extremely well with no significant overfitting.
