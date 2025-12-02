@@ -94,6 +94,7 @@ Gradio UI  →  FastAPI Backend → ONNXRuntime → Prediction
     pip install -r requirements.txt
 
 2️⃣ Start FastAPI backend
+
 uvicorn app:app --reload
 
 Backend runs at:
@@ -101,10 +102,13 @@ Backend runs at:
 http://127.0.0.1:8000/predict
 
 3️⃣ Launch the Gradio UI
+
 python ui.py
 
 You will get:
+
 Local URL → http://0.0.0.0:7860
+
 Public URL → generated automatically by Gradio
 
 # Tech Stack
