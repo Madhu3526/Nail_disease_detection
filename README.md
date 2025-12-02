@@ -31,11 +31,17 @@ The complete system includes model training, conversion to ONNX, and deployment 
 # Model Architecture
 
 Backbone: tf_efficientnet_b0_ns
+
 Framework: PyTorch
+
 Loss Function: Cross-Entropy
+
 Optimizer: AdamW
+
 Scheduler: Cosine Annealing
+
 Image Size: 224 × 224
+
 
 # Training Summary
 
